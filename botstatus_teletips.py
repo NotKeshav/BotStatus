@@ -54,7 +54,7 @@ async def main_teletips():
                 xxx_teletips += f"\n\n✔️ Last checked on: {last_update} ({TIME_ZONE})\n\n<i>♻️ Refreshes automatically</i>"
                 await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xxx_teletips)
                 print(f"Last checked on: {last_update}")                
-                await asyncio.sleep(6300)
+                await asyncio.sleep(60)
                         
 app.run(main_teletips())
 
