@@ -8,4 +8,4 @@ RUN pip3 install -r requirements.txt
 
 COPY . /app
 
-CMD python3 alpha.py
+CMD python3 botstatus_teletips.py
