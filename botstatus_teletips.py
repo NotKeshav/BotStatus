@@ -24,7 +24,6 @@ MESSAGE_ID = int(os.environ["MESSAGE_ID"])
 BOT_ADMIN_IDS = [int(i.strip()) for i in os.environ.get("BOT_ADMIN_IDS").split(' ')]
 PLATFORM = os.environ['PLATFORM'].split()
 
-
 async def main_teletips():
     async with app:
             while True:
@@ -40,7 +39,7 @@ async def main_teletips():
                         async for ccc in zzz_teletips:
                             bbb = ccc.id
                         if aaa == bbb:
-                            xxx_teletips += f"\n\n🤖  @{bot} 💤 \n        └ **Down** ❌ --> {PLATFORM[alfa]}"
+                            xxx_teletips += f"\n\n🤖  @{bot} 💤 \n        └ **Down** ❌ --> {PLATFORM[alfa] if PLATFORM[alfa] else None}"
                             for bot_admin_id in BOT_ADMIN_IDS:
                                 try:
                                     await app.send_message(int(bot_admin_id), f"🚨 **Beep! Beep!! @{bot} is down** ❌")
@@ -49,7 +48,7 @@ async def main_teletips():
                             await app.read_chat_history(bot)
                             alfa += 1
                         else:
-                            xxx_teletips += f"\n\n🤖  @{bot}\n        └ **Alive** ✅ --> {PLATFORM[alfa]}"
+                            xxx_teletips += f"\n\n🤖  @{bot}\n        └ **Alive** ✅ --> {PLATFORM[alfa] if PLATFORM[alfa] else None}"
                             await app.read_chat_history(bot)
                             alfa += 1
                     except FloodWait as e:
