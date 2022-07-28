@@ -18,7 +18,7 @@ app = Client(
     session_string = os.environ["SESSION_STRING"]
 )
 TIME_ZONE = os.environ["TIME_ZONE"]
-BOT_LIST = [i.strip() for i in os.environ.get("BOT_LIST").split(' ')]
+BOT_LIST = [i.strip() for i in os.environ['BOT_LIST'].split(' ')]
 CHANNEL_OR_GROUP_ID = int(os.environ["CHANNEL_OR_GROUP_ID"])
 MESSAGE_ID = int(os.environ["MESSAGE_ID"])
 BOT_ADMIN_IDS = [int(i.strip()) for i in os.environ.get("BOT_ADMIN_IDS").split(' ')]
