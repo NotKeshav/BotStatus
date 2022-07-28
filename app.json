@@ -41,6 +41,10 @@
         "TIME_ZONE": {
             "description": "Your time zone (Example: Asia/Kolkata)",
             "required": true
+        },
+        "PLATFORM": {
+            "description": "BOT HOSTING PLATFORM !",
+            "required": false
         }
     },
     "formation": {
