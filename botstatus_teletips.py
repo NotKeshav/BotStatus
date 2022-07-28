@@ -22,15 +22,15 @@ BOT_LIST = [i.strip() for i in os.environ['BOT_LIST'].split(' ')]
 CHANNEL_OR_GROUP_ID = int(os.environ["CHANNEL_OR_GROUP_ID"])
 MESSAGE_ID = int(os.environ["MESSAGE_ID"])
 BOT_ADMIN_IDS = [int(i.strip()) for i in os.environ.get("BOT_ADMIN_IDS").split(' ')]
-PLATFORM = os.environ['PLATFORM']
-if not PLATFORM:
-    PLATFORM = "Okteto"
+PLATFORM = os.environ['PLATFORM'].split()
+
 
 async def main_teletips():
     async with app:
             while True:
                 print("Checking...")
                 xxx_teletips = f"📈 | ** TʜᴇEɴᴅNᴇᴛᴡᴏʀᴋ™ Bot Status**"
+                alfa = 0
                 for bot in BOT_LIST:
                     try:
                         yyy_teletips = await app.send_message(bot, "/start")
@@ -40,16 +40,18 @@ async def main_teletips():
                         async for ccc in zzz_teletips:
                             bbb = ccc.id
                         if aaa == bbb:
-                            xxx_teletips += f"\n\n🤖  @{bot} 💤 \n        └ **Down** ❌ --> {PLATFORM}"
+                            xxx_teletips += f"\n\n🤖  @{bot} 💤 \n        └ **Down** ❌ --> {PLATFORM[alfa]}"
                             for bot_admin_id in BOT_ADMIN_IDS:
                                 try:
                                     await app.send_message(int(bot_admin_id), f"🚨 **Beep! Beep!! @{bot} is down** ❌")
                                 except Exception:
                                     pass
                             await app.read_chat_history(bot)
+                            alfa += 1
                         else:
-                            xxx_teletips += f"\n\n🤖  @{bot}\n        └ **Alive** ✅ --> {PLATFORM}"
+                            xxx_teletips += f"\n\n🤖  @{bot}\n        └ **Alive** ✅ --> {PLATFORM[alfa]}"
                             await app.read_chat_history(bot)
+                            alfa += 1
                     except FloodWait as e:
                         await asyncio.sleep(e.x)            
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
