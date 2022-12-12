@@ -15,7 +15,7 @@ app = Client(
     name = "botstatus_teletips",
     api_id = 13691707,
     api_hash = "2a31b117896c5c7da27c74025aa602b8",
-    session_string = "BQBiMZkAryFRmnGGGDZKfmO544Fxy59EHt7F-HZ9FtBSooBTlecTbf8O6cK7wMjSLEM7WRChucWwk9Q9WK1pKkBuQ-flHUf4Ru7YGFhoOeNqEPAFn_Bvocqzc-LK0m16FdAeq8Y2gVwsAJoMuru4_O1DUJljec3E8P1aMuWgwB9NjUt00Hl9WKmrQejopcdBMTx8DPhinJ75_XFgISLO5PoVivvs1pb3FJtVr6cEnQcDDzigCbaeyt4-THXG5ha1hvie4bihC7QH07OLUcJb8-AqfXhCr9hsZAKz1DIZQ8KpxUPVJcsPKhjTkjS61WNaFOioZbUs3HV6Fj56-gM_OObYESiD7gAAAAE35sIdAA"
+    session_string = "BQBiMZkAP_e7w6Jz1zoPb-GJ7rdeRBa1VZVNCLDDmxf5ZKU47ZHkcVERRZnO4DT5ZWIbhVitfWxRkqsOMPLw67SsWG3wfntw9S8B89ZakmsSF_dpZkD_gqs9vLHUuK132rSABUJ63D8h7fjIbymFQ9SO2xwbowelTCOtbSTSUbN8dR4DLAyAqOCuQhFPWAsvuA2hcGB6L_LgLfMtPmd86UkumP_OzP-CBX1bWv49A015T3m4m4Pf2a820Oq0Sd5G1KPXSX_vh7M6nbXNcy_LYQ605VsnX3pJEgmrWx8Ixe5XZWEF4oXlqu4LPqHBrE0xksrQBBupw_3-IAjMtG-25j2WI2TxQQAAAAE35sIdAA"
 )
 TIME_ZONE = "Asia/Kolkata"
 BOT_LIST = ["Spl_Levi_Ackerman_Bot", "spl_afk_bot", "spl_sticker_bot"]
