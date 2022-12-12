@@ -1,4 +1,4 @@
-**First of all thank you @Teletips, I've took this repo from them also visit their github profile @Teletips**
+**First of all thank you @Teletips, I've took this repo from them, also visit their github profile @Teletips**
 
 <h1 align= center> Powerful_BotStatus-TeLeTiPs</h1>
 <h3 align = center>Easy & powerful bot to check if your all Telegram bots are working or not. This bot status bot refreshes automatically & runs for 24x7 hours.</h3>
