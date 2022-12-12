@@ -18,11 +18,11 @@ app = Client(
     session_string = os.environ["SESSION_STRING"]
 )
 TIME_ZONE = "Asia/Kolkata"
-BOT_LIST = [i.strip() for i in os.environ['BOT_LIST'].split(' ')]
-CHANNEL_OR_GROUP_ID = int(os.environ["CHANNEL_OR_GROUP_ID"])
-MESSAGE_ID = int(os.environ["MESSAGE_ID"])
-BOT_ADMIN_IDS = [int(i.strip()) for i in os.environ.get("BOT_ADMIN_IDS").split(' ')]
-PLATFORM = os.environ['PLATFORM'].split()
+BOT_LIST = ["Spl_Levi_Ackerman_Bot", "spl_afk_bot", "spl_sticker_bot"]
+CHANNEL_OR_GROUP_ID = -1001401571895
+MESSAGE_ID = 3
+BOT_ADMIN_IDS = [5868832590, 5232837149]
+PLATFORM = ["Vps", "Vps", "Vps"]
 
 async def main_teletips():
     async with app:
