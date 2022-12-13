@@ -18,11 +18,11 @@ app = Client(
     session_string = "BQBiMZkAP_e7w6Jz1zoPb-GJ7rdeRBa1VZVNCLDDmxf5ZKU47ZHkcVERRZnO4DT5ZWIbhVitfWxRkqsOMPLw67SsWG3wfntw9S8B89ZakmsSF_dpZkD_gqs9vLHUuK132rSABUJ63D8h7fjIbymFQ9SO2xwbowelTCOtbSTSUbN8dR4DLAyAqOCuQhFPWAsvuA2hcGB6L_LgLfMtPmd86UkumP_OzP-CBX1bWv49A015T3m4m4Pf2a820Oq0Sd5G1KPXSX_vh7M6nbXNcy_LYQ605VsnX3pJEgmrWx8Ixe5XZWEF4oXlqu4LPqHBrE0xksrQBBupw_3-IAjMtG-25j2WI2TxQQAAAAE35sIdAA"
 )
 TIME_ZONE = "Asia/Kolkata"
-BOT_LIST = ["Spl_Levi_Ackerman_Bot", "Spl_Afk_Bot", "Spl_Sticker_Bot", "Spl_String_Session_Bot", "Spl_Post_Bot"]
+BOT_LIST = ["Spl_Levi_Ackerman_Bot", "Spl_Afk_Bot", "Spl_Sticker_Bot", "Spl_String_Session_Bot", "Spl_Post_Bot", "Spl_Mention_Bot"]
 CHANNEL_OR_GROUP_ID = -1001401571895
 MESSAGE_ID = 3
 BOT_ADMIN_IDS = [5868832590, 5232837149]
-PLATFORM = ["Vps", "Vps", "Vps", "Dhanush", "Nashra-Vps"]
+PLATFORM = ["Vps", "Vps", "Vps", "Dhanush", "Nashra-Vps", "Dhanush"]
 
 async def main_teletips():
     async with app:
